@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime website</title>
+    <style>
+        body{
+            overflow-x: hidden;
+            background: rgb(14, 11, 15);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        #navbar{
+            display: flex;
+            justify-content: space-around;
+           
+        }
+        ul li{
+            padding-top: 30px;
+            list-style-type: none;
+        }
+        ul img{
+            height: 100px;
+            width: 100px;
+        }
+        ul input{
+            border-radius: 8px;
+            width: 800px;
+            height: 30px;
+            text-align: center;
+        }
+        .nav{
+          color: aliceblue;  
+          
+        }
+        #menu{
+            background-color: azure;
+            height: 50px ;
+            padding-top: 10px;
+            margin-top:25px;
+            width: 50px;
+        }
+        #log{
+            border-radius: 10px;
+            margin-top:25px;
+            padding-top: 10px;
+            background-color: blueviolet;
+            height: 25px;
+            width: 120px;
+            text-align: center;
+        }
+        #main{
+            
+            width: 100%;
+            height: 5000px;  
+        }
+        #tittle{
+            padding-top: 50px;
+            padding-left: 40px;
+            font-size: 50px;
+            color: aliceblue;
+        }
+        img{
+            
+            height: 500px;
+            max-width: 100%;
+            object-fit:contain;
+        }
+        #imag{
+            height: 500px;
+            width: 100vw;
+            box-shadow: inset 554px 54px 112px 12px black;
+            background-image: url("anw-min.webp");
+            background-position-x: right;
+            color: aliceblue;
+            font-size:40px;
+            padding-bottom: 40px;
+        }
+        #name1{
+            padding-top: 80px;
+            padding-left: 40px;
+        }
+        #dis{
+            width: 60%;
+            padding-left: 40px;
+            padding-top: 50px;
+            font-size: 25px;
+            margin-bottom: 60px;
+        }
+        
+        #watch{
+            
+            width: 70px;
+            padding-top: 20px;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-bottom: 20px;
+            background-color: #8a2be2;
+            border-radius: 10px;
+            margin-left: 40px;
+            font-size: 30px;
+            
+            box-shadow: 6px 8px 0px #b995db ;
+            transition: transform 0.3s, box-shadow 0.5s;
+        }
+        #watch a{
+            text-decoration: none;
+            color: aliceblue;
+
+        }
+        #watch:enabled{
+            background-color: #511886;
+            transform: translate3d(10px, 10px, 0px);
+            box-shadow: none;
+        }
+        #fall{
+            font-size: 50px;
+            padding-top: 40px;
+            text-align: center;
+            color: aliceblue;
+            width: 100%;
+            height: 100px;
+        } 
+        #com1{
+
+            width: 100%;
+            background-color: rgb(51, 51, 51);
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content:space-around;           
+        }
+        .tr1{
+            background-color: white;
+            width: 200px;
+            height: 250px;
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            border-radius: 10px;   
+            transition: transform 0.3s, box-shadow 0.3s;
+              
+        }
+        .tr1:hover{
+            transform: translateY(-20px) scale(1.1); /* Moves the box upward and slightly enlarges it */
+            box-shadow: 20px 20px 0px rgba(0, 0, 0, 0.3);
+        }
+        #p1{
+            background-image: url("4c339e5c8107dbda621c214e351f7164.jpg");
+            
+        }
+        #p2{
+            background-image: url("5f112b1c1f3f41ed87de0c48b6cf4e0d.jpg");
+        }
+        #p3{
+            background-image: url("8ed3a4df2e8f22be9916959c96e5e3e2.jpg");
+        }
+        #p4{
+            background-image: url("bcd84731a3eda4f4a306250769675065.jpg");
+        }
+        #p5{
+            background-image: url("a8b56a7589ff9edb6c86977c31e27a06.jpg");
+        }
+        #p6{
+            background-image: url("b87a9e986e6e403ffddb520d24f5040a.jpg");
+        }
+        #trend{
+            padding-top: 50px;
+            width: 100%;
+            height: 100px;
+            font-size: 50px;
+            color: aliceblue;
+            padding-left: 40px;
+
+        }
+        #twoga{
+            height: 700px;
+            width: 100vw;
+            box-shadow: inset 554px 54px 112px 12px black;
+            background-image: url("46d8e6d3fcd4a016ff5e90f0281eae76.jpg");
+            background-position-x: right;
+            color: aliceblue;
+            font-size:40px;
+        }
+        #com2{
+            width: 100%;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content:space-around;   
+            
+            
+
+        }
+        
+        
+
+        
+
+    </style>
+</head>
+<body>
+    <ul id="navbar">
+        <span class="nav" id="menu"></span>
+        <span class="nav" ><img src="make_a_logo_for_a_anime_website_named_anime4me_it_should_be_elegant__6p02dbbfjp7qk39ex26l_3.png" alt=""></span>
+        <li class="nav"><input type="text" placeholder="search"></li>
+        <a href="animelogin.html"><li class="nav" id="log">login</li></a>
+    </ul>
+    <div id="main">
+        <div id="tittle"></div>
+        <div id="imag">
+            <p id="name1">Anime 4U</p>
+            <p id="dis">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore doloremque dolores voluptatibus eius voluptatem quaerat aliquam accusantium aliquid in, similique illo, quisquam deleniti earum saepe optio corporis quia? Maxime, ullam. Officia enim placeat, exercitationem molestiae est temporibus sunt accusamus eaque explicabo, sed aperiam!
+            </p>
+            <div id="watch"><a href="https://hianime.nz/home">watch</a></div>
+        </div>
+            <div id="fall">NEW FALL RELASE</div>
+            <div id="com1">
+                <a href="https://hianime.nz/rurouni-kenshin-kyoto-disturbance-19340"><div class="tr1" id="p1"></div></a>
+                <a href="https://hianime.nz/blue-box-19326"><div class="tr1"  id="p2"></div></a>
+                <a href="https://hianime.nz/watch/blue-lock-17889?ep=94538"><div class="tr1" id="p3"></div></a>
+                <a href="https://hianime.nz/one-piece-100"><div class="tr1" id="p4"></div></a>
+                <a href="https://hianime.nz/rurouni-kenshin-kyoto-disturbance-19340"><div class="tr1" id="p5"></div></a>
+                <a href="https://hianime.nz/bleach-thousand-year-blood-war-the-conflict-19322"><div class="tr1" id="p6"></div></a>
+            </div>
+            <div id="trend">Trending...</div>
+            <div id="twoga">
+                <p id="name1">1.Demon Slayer: Kimetsu no Yaiba Swordsmith Village Arc</p>
+                <p id="dis">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa repellat voluptatum fuga porro consectetur esse maxime, molestias, sed magni laborum odio quia laudantium? Voluptas nihil itaque quasi omnis animi. Dignissimos fugiat tenetur excepturi dicta, non quod optio accusamus quaerat vero doloremque quidem tempora ut nesciunt?
+                </p>
+                <div id="com2">
+                    <a href=""><div class="tr1" id="p1"></div></a>
+                    <a href=""><div class="tr1"  id="p2"></div></a>
+                    <a href=""><div class="tr1" id="p3"></div></a>
+                    <a href=""><div class="tr1" id="p4"></div></a>
+                    <a href=""><div class="tr1" id="p5"></div></a>
+                    <a href=""><div class="tr1" id="p6"></div></a>
+                </div>
+                </div>
+
+       
+    
+</body>
+</html>
